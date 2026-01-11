@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eduardo Coelho - Portfolio</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/kayframes.css">
+
+    <!-- Link JS -->
+    
+    
+    <!-- Link favicon -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <!-- Fontes Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;700&family=Manrope:wght@400;500;700&family=Outfit:wght@400;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bibliotecas de ícones -->
+    <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Biblioteca JS Animações -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+          
+</head>
+<body>
+    <!-- Background com partículas -->
+    <div id="particles-js"></div>
+
+    <!-- Cabeçalho e Navegação -->
+        <header data-aos="fade-down">
+            <div class="container-logo-nav">
+                <div>
+                    <h1 class="logo">&lt;Eduardo/&gt;</h1>
+                </div>
+
+                <nav class="nav-bar">
+                    <a href="#home">Home</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+            </div>    
+        </header>
+            
+
+        <!-- HOME -->
+
+        <section id="home">
+            <div class="container-main-home">
+                <div class="container-home">
+                    <div>
+                        <h1 class="meuNome"><span id="typed"></span></h1>
+                    </div>
+                    <div class="subTexto" data-aos="zoom-in-down">
+                        <h2>Frontend Developer</h2>
+                    </div>
+                    <div class="desc" data-aos="zoom-in-up">
+                        <p>Transformando ideias em interfaces Front-End com foco em usabilidade e performance.</p>
+                    </div>
+                    <div class="btn-home" data-aos="zoom-in-up">
+                        <button><a href="#projetos">Projetos &lt;/&gt;</a></button>
+                        <button><a href="#contato">Contato</a></button>
+                    </div>
+                </div>
+                <div class="arrowIcon">
+                    <i class='bxr  bx-chevrons-down'></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE -->
+
+        <section id="sobre">
+            <div class="container-sobre">
+                <div class="textSobre">
+                    <h1 data-aos="zoom-out-down">Sobre mim</h1>
+                </div>
+
+                <div class="img-text">
+                     <div class="img" data-aos="fade-right">
+                        <img src="assets/perfil-portfolio.PNG" alt="Foto de perfil do Eduardo">
+                    </div>
+
+                    <div class="text-icons" data-aos="fade-left">
+                        <p>Olá me chamo <span>Eduardo</span> sou <span>graduado</span> em ADS (Análise e desenvolvimento de sistemas) e sou Desenvolvedor Web com <span>2 anos de experiência</span>. Trabalho principalmente com front-end, mas também tenho conhecimento em back-end. Aqui você encontrará um pouco mais sobre mim
+                        </p>
+
+                        <div class="icons">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                            <i id="githubicon" class="devicon-github-original"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+
+        <section id="projetos">
+            <div class="containerProjetos">
+                <div class="textProjetos">
+                    <h1 data-aos="zoom-out-down">Projetos</h1>
+                </div>
+
+                <div class="cardsProjetos">
+                    <div class="card1" data-aos="fade-up-right">
+                        <img src="assets/img-projetos/site-gamingwebsite.png" alt="">
+                        <h3>HeavenGame</h3>
+                        <p>Landing page</p>
+
+                        <div class="iconsProjetos">
+                            <i class="phtml phtml bi bi-filetype-html"></i>
+                            <i class="pcss bi bi-filetype-css"></i>
+                            <i class="pjs bi bi-filetype-js"></i>
+                        </div>
+
+                        <div class="btn-projetos">
+                            <button><a href="">GitHub <i class="bi bi-github"></i></a></button>
+                            <button><a href="">Ver site <i class="bi bi-box-arrow-up-right"></i></a></button>
+                        </div>
+                    </div>
+
+                    <div class="card2" data-aos="fade-up-left">
+                        <img src="assets/img-projetos/site-advocacia.png" alt="">
+                        <h3>Veritas Advocacia</h3>
+                        <p>Landing page</p>
+
+                        <div class="iconsProjetos">
+                            <i class="phtml bi bi-filetype-html"></i>
+                            <i class="pcss bi bi-filetype-css"></i>
+                            <i class="pjs bi bi-filetype-js"></i>
+                            <i class="pphp bi bi-filetype-php"></i>
+                        </div>
+
+                        <div class="btn-projetos">
+                            <button><a href="">GitHub <i class="bi bi-github"></i></a></button>
+                            <button><a href="">Ver site <i class="bi bi-box-arrow-up-right"></i></a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+
+        <section id="contato">
+            <div class="containerContatoView" data-aos="fade-up">
+                <div class="containerContato">
+                    <div class="textContato">
+                        <h1>Vamos conversar?</h1>
+                        <p>Envie sua mensagem e vamos conversar sobre sua ideia!</p>
+                    </div>
+                    <div class="linksContato">
+                        <div class="emailContato">
+                            <i class="bi bi-envelope-at-fill"></i>
+                            <a href="mailto:eduardocoelhosld17@gmail.com?subject=Contato pelo site">eduardocoelhosld17@gmail.com</a>
+                        </div>
+
+                        <div class="iconsContato">
+                            <a href="https://wa.me/" target="_blank"><i id="wppContato" class="bi bi-whatsapp"></i></a>
+                            <a href="https://www.linkedin.com/in/eduardo-coelho-04338b261/" target="_blank"><i id="linkedinContato" class="bi bi-linkedin"></i></a>
+                            <a href="https://github.com/eduardocoelho17" target="_blank"><i id="githubContato" class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+
+        <section>
+            <div class="containerFooter">
+                <p><i class="bi bi-c-circle"></i> <a href="https://github.com/eduardocoelho17" target="_blank">Eduardo Coelho </a>| All Rights Reserved</p>
+            </div>
+        </section>
+
+        <!-- Particles.js -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+        <script src="js/typed.init.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="js/particles-bg.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/aos.init.js"></script>
+</body>
+</html>

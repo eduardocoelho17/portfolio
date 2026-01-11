@@ -1,0 +1,497 @@
+:root {
+    --cor1: #184c61;
+    --cor2: #0093ad;
+    --cor3: #66FFFF;
+    --titleColor: #4DFAFA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto mono, monospace, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    background-color: #06161d;
+}
+
+/* CABEÇALHO E NAVEGAÇÃO */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    isolation: isolate;
+}
+
+.container-logo-nav {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-logo-nav div h1 {
+    font-size: 2.2em;
+    font-weight: 750;
+    font-family: Atkinson Hyperlegible Mono, monospace, sans-serif;
+    padding: 0px 100px;
+
+    background: linear-gradient(
+    90deg,
+    var(--cor1) 0%,
+    var(--cor3) 50%,
+    var(--cor1) 100%
+    );
+
+    -webkit-background-clip: text;    /* Recorta o fundo no formato do texto
+    O gradiente só aparece nas letras, não no fundo do elemento.
+    (necessário para Chrome, Edge e Safari) */
+    background-clip: text;    /* Versão padrão da mesma coisa
+    Serve para navegadores que já suportam sem -webkit- */
+    -webkit-text-fill-color: transparent;     /* Remove a cor normal do texto
+    Deixa o texto transparente para o gradiente aparecer. */
+}
+
+nav {
+    padding: 0px 100px;
+}
+
+.nav-bar a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0px 15px;
+    padding: 9px;
+    padding-bottom: 15px;
+}   
+
+.nav-bar a:hover {
+    color: var(--cor3);
+    border-bottom: 2px solid var(--cor3);
+}
+
+/* HOME */
+
+.container-main-home {
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0px;
+}
+
+.container-home {
+    display: flex;
+    margin-top: 150px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-home div h1 {
+    font-family: roboto mono, sans-serif;
+    font-size:4.1em;
+    
+    background: linear-gradient(
+    90deg,
+    var(--cor2) 0%,
+    var(--cor3) 50%,
+    var(--cor2) 100%
+    );
+
+    -webkit-background-clip: text; 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+
+.container-home .subTexto h2 {
+    font-size: 1.2em;
+    padding: 20px 0px 40px 0px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.container-home .desc p {
+    font-family: outfit, monospace, sans-serif;
+    font-size: 1em;
+    padding-bottom: 30px;
+    letter-spacing: 1px;
+    width: 500px;
+    text-align: center;
+}
+
+.btn-home {
+    margin-top: 30px;
+    margin: 0px 20px;
+}
+
+.btn-home button a {
+    font-family: Atkinson Hyperlegible Mono, sans-serif;
+    font-size: 1.01em;
+    font-weight: 500;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.btn-home button {
+    height: 45px;
+    width: 140px;
+    border-radius: 30px;
+    margin: 0px 10px;
+    border: none;
+
+    background: linear-gradient(to left, var(--cor3), var(--cor1));
+    background-size: 200% 100%;
+    background-position: left center;
+
+    transition: 
+    background-position 0.3s ease,
+    transform 0.2s ease;
+}
+
+.btn-home button:hover {
+    cursor: pointer;
+    background-position: right center;
+    transform: scale(1.01);
+}
+
+.arrowIcon i {
+    color: whitesmoke;
+    padding-top: 100px;
+    font-size: 3em;
+    animation: scroll-down 2s infinite;
+}
+
+/* SOBRE */
+
+.container-sobre {
+    margin-top: 100px;
+    min-height:100vh ;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textSobre h1 {
+    color: var(--titleColor);
+    text-align: center;
+    font-weight: 500;
+    width: 300px;
+    font-size: 2.3em;
+    border-bottom: 2px solid var(--titleColor);
+    padding-bottom: 5px;
+    margin-bottom: 70px;
+}
+
+.img-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.img-text .img img {
+    height: 500px;
+    border-radius: 50%;
+    border: 2px solid var(--cor3);
+    box-shadow: 0px 0px 10px var(--cor3);
+    margin-bottom: 90px;
+}
+
+.text-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-text .text-icons p {
+    color: whitesmoke;
+    font-family: outfit, sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 1.1em;
+    width: 600px;
+    line-height: 2.0;
+}
+
+.img-text .text-icons p span {
+    color: var(--cor3);
+}
+
+.text-icons .icons {
+    margin-top: 80px;
+}
+
+.text-icons .icons img {
+    width: 35px;
+    margin: 0px 5px;
+}
+
+.text-icons .icons #githubicon {
+    color: #8612FB;
+    font-size: 36px;
+}
+
+/* container das partículas */
+
+
+/* Conteúdo acima das partículas */
+
+section,
+.container-main-home,
+.container-sobre {
+    position: relative;
+    z-index: 1;
+}
+
+/* Header SEMPRE no topo */
+
+
+.containerProjetos {
+    box-shadow: 0px -2px 15px #4dfafa21;
+    min-height: 100vh;
+    backdrop-filter: blur(5px);
+    
+}
+
+.containerProjetos .textProjetos {
+    display: flex;
+    justify-content: center;
+}
+
+.containerProjetos .textProjetos h1 {
+    color: var(--titleColor);
+    margin-top: 100px;
+    border-bottom: 2px solid var(--titleColor);
+    text-align: center;
+    padding-bottom: 5px;
+    width: 300px;
+    font-family: roboto mono, sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.containerProjetos .card1, .card2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.containerProjetos .card1 h3,
+.containerProjetos .card2 h3 {
+    text-align: center;
+    padding: 10px 0px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.containerProjetos .card1 p,
+.containerProjetos .card2 p {
+    text-align: center;
+    color: rgba(245, 245, 245, 0.719);
+    padding-bottom: 10px;
+}
+
+.containerProjetos .cardsProjetos img {
+    height: 300px;
+}
+
+.cardsProjetos {
+    height: 83vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cardsProjetos .iconsProjetos {
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cardsProjetos .iconsProjetos i {
+    font-size: 1.4em;
+    margin: 0px 5px;
+    cursor: pointer;
+    transition: transform .2s ease-in-out, color 0.2s ease;
+}
+
+.iconsProjetos .phtml:hover {
+    color: #F16529;
+    transform: scale(1.20);
+}
+.iconsProjetos .pcss:hover {
+    color: #33A9DC;
+    transform: scale(1.20);
+}
+.iconsProjetos .pjs:hover {
+    color: #F0DB4F;
+    transform: scale(1.20);
+}
+.iconsProjetos .pphp:hover {
+    color: #777BB3;
+    transform: scale(1.20);
+}
+
+.cardsProjetos .btn-projetos {
+    display: flex;
+    justify-content: center;
+}
+
+.cardsProjetos .btn-projetos a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.01em;
+}
+
+.cardsProjetos .btn-projetos button {
+    margin: 0px 10px;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    width: 110px;
+
+    background: linear-gradient(to left, var(--cor3), var(--cor2));
+    background-size: 200% 100%;
+    background-position: left center;
+
+    transition: 
+    background-position 0.3s ease,
+    transform 0.2s ease;
+}
+
+.cardsProjetos .btn-projetos button:hover {
+    cursor: pointer;
+    background-position: right center;
+    transform: scale(1.01);
+}
+
+/* CONTATO */
+
+.containerContatoView {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerContato {
+    background-color: #192338;
+    height: 300px;
+    width: 1000px;
+    box-shadow: 0px 0px 10px #4dfafa80;
+}
+
+.textContato {
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textContato h1 {
+    color: var(--titleColor);
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.textContato p {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.linksContato {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90px;
+}
+
+.emailContato a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.emailContato a:hover {
+    text-decoration: underline;
+}
+
+.emailContato i{
+    color: whitesmoke;
+    font-size: 1.2em;
+}
+
+.iconsContato i{
+    color: whitesmoke;
+    font-size: 1.6em;
+    padding: 0px 10px;
+    display: inline-block;
+    transition: transform 0.25s ease, color;
+}
+
+.iconsContato i:hover {
+    cursor: pointer;
+    transform: scale(1.20);
+}
+
+.iconsContato #wppContato:hover {
+    color: #3BC63C;
+}
+
+.iconsContato #linkedinContato:hover {
+    color: #126BC4;
+}
+
+.iconsContato #githubContato:hover {
+    color: #812791;
+}
+
+/* FOOTER */
+
+.containerFooter {
+    height: 70px;
+    color: whitesmoke;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerFooter a {
+    text-decoration: none;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+/* container das partículas */
+
+#particles-js {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #00010c, #080d14);
+    z-index: 0;
+    pointer-events: none;
+}
